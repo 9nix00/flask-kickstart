@@ -11,7 +11,7 @@ Flask Kickstart
 使用约束
 ----
 
-- 项目名称必须是一个合法的python包名称
+- 项目名称必须是一个合法的python包名称且不能叫hive
 - 仅支持Github
 - Github 团队（个人）目录下必须有一个命名为___REPO___-config的配置项目
 - 本地部署目录必须有真实可用的hello-deploy
@@ -51,6 +51,7 @@ ROUTER-IP:139.198.190.190 \
 \
 \
 REPO:wangwenpei/___pkg___ \
+GFW:direct \
 PYTHON-VERSION:pypy3.5-5.10.0 \
 DATABASE:___pkg___ \
 DOMAIN:___pkg___.com \

@@ -1,0 +1,30 @@
+{
+  "init": {
+    "title": "初始化环境",
+    "workflow": [
+      "cab config --hosts-file=./config/fabric/web.conf --env=hello.hacker --dir=../../../1024/hello-deploy/",
+      "cab config --hosts-file=./config/fabric/web.conf --env=hello.___GFW___ --dir=../../../1024/hello-deploy/",
+      "fab ez:web,./config/fabric fix_upgrade -f ./config/cabric/web/fabfile.py",
+      "cab install --hosts-file=./config/fabric/web.conf --env=hello.world --dir=../../../1024/hello-deploy/  --skip-pyenv --skip-pypi",
+      "cab install --hosts-file=./config/fabric/web.conf --env=hello.nginx --dir=../../../1024/hello-deploy/  --skip-pyenv --skip-pypi",
+      "cab install --env=web",
+      "cab install --env=private",
+      "cab install --env=hive --dir=../../../1024/hive/old-fashion/",
+      "cab config --hosts-file=./config/fabric/web.conf  --env=hello.world --dir=../../../1024/hello-deploy/",
+      "cab config --hosts-file=./config/fabric/web.conf  --env=hello.nginx --dir=../../../1024/hello-deploy/",
+      "cab config --env=web",
+      "cab deploy --env=web --with-deploy-key",
+      "cab deploy --env=private --with-deploy-key",
+      "cab deploy --env=hive --dir=../../../1024/hive/old-fashion/ --with-deploy-key"
+    ]
+  },
+  "deploy": {
+    "title": "上线代码",
+    "workflow": [
+      "cab deploy --env=hive --dir=../../../1024/hive/old-fashion/",
+      "cab deploy --env=web",
+      "cab deploy --env=private",
+      "cab config --env=web --restart wsgi-___pkg___ celery-___pkg___"
+    ]
+  }
+}
