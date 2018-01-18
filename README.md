@@ -25,13 +25,18 @@ Flask Kickstart
 你需要做什么？
 ---
 
+在github中创建这个项目仓库，名称必须为 ___REPO___。
+之后不需要继续对Github做任何操作。
+
 执行
 
 ```
 cliez create wangwenpei/flask-kickstart <本地路径>
 ```
 
-打开该文档并编辑下面参数为自己满意的参数后，然后再执行
+
+进入<本地路径>该目录
+打开该文档并编辑下面参数为自己满意的参数后，然后复制粘贴至shell再执行
 
 ```
 cliez init -s \
@@ -58,7 +63,16 @@ DOMAIN:___pkg___.com \
 WSGI-PORT:<端口号7010-7999> \
 pkg:<必须是英文> \
 --skip-builtin --yes
+```
 
-# 建议修改执行上条语句后执行
+
+执行已经声称好的语句
+```
 mysql -uroot -e 'CREATE DATABASE `___DATABASE___` DEFAULT CHARACTER SET utf8mb4'
+rm -rf ../___pkg___/.git
+git init .
+git add .
+git commit -a -m 'first commit'
+git remote add origin git@github.com:___REPO___.git
+git push -u origin master
 ```

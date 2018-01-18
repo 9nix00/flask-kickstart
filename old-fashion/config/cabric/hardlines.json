@@ -4,7 +4,7 @@
     "workflow": [
       "cab config --hosts-file=./config/fabric/web.conf --env=hello.hacker --dir=../../../1024/hello-deploy/",
       "cab config --hosts-file=./config/fabric/web.conf --env=hello.___GFW___ --dir=../../../1024/hello-deploy/",
-      "fab ez:web,./config/fabric fix_upgrade -f ./config/cabric/web/fabfile.py",
+      "fab ez:web,./config/fabric fix_upgrade -f ../../../1024/hello-deploy/config/cabric/hello.hacker/fabfile.py",
       "cab install --hosts-file=./config/fabric/web.conf --env=hello.world --dir=../../../1024/hello-deploy/  --skip-pyenv --skip-pypi",
       "cab install --hosts-file=./config/fabric/web.conf --env=hello.nginx --dir=../../../1024/hello-deploy/  --skip-pyenv --skip-pypi",
       "cab install --env=web",
