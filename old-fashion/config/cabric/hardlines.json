@@ -21,10 +21,10 @@
   "deploy": {
     "title": "上线代码",
     "workflow": [
-      "cab deploy --env=hive --dir=../../../1024/hive/old-fashion/",
+      "cab deploy --env=hive  --hosts-file=./config/fabric/web.conf --dir=../../../1024/hive/old-fashion/",
       "cab deploy --env=web",
-      "cab deploy --env=private",
-      "cab config --env=web --restart wsgi-___pkg___ celery-___pkg___"
+      "cab deploy --env=private --hosts-file=./config/fabric/web.conf",
+      "cab config --env=web --restart wsgi-stormxx celery-stormxx"
     ]
   }
 }
