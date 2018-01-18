@@ -14,7 +14,7 @@
       "cab config --hosts-file=./config/fabric/web.conf  --env=hello.nginx --dir=../../../1024/hello-deploy/",
       "cab deploy --env=web --with-deploy-key",
       "cab deploy --env=private --hosts-file=./config/fabric/web.conf --with-deploy-key",
-      "cab deploy --env=hive --dir=../../../1024/hive/old-fashion/ --with-deploy-key",
+      "cab deploy --env=hive  --hosts-file=./config/fabric/web.conf --dir=../../../1024/hive/old-fashion/ --with-deploy-key",
       "cab config --env=web"
     ]
   },
