@@ -8,7 +8,7 @@
       "cab install --hosts-file=./config/fabric/web.conf --env=hello.world --dir=../../../1024/hello-deploy/  --skip-pyenv --skip-pypi",
       "cab install --hosts-file=./config/fabric/web.conf --env=hello.nginx --dir=../../../1024/hello-deploy/  --skip-pyenv --skip-pypi",
       "cab install --env=web",
-      "cab install --env=private",
+      "cab install --env=private --hosts-file=./config/fabric/web.conf",
       "cab install --env=hive --dir=../../../1024/hive/old-fashion/",
       "cab config --hosts-file=./config/fabric/web.conf  --env=hello.world --dir=../../../1024/hello-deploy/",
       "cab config --hosts-file=./config/fabric/web.conf  --env=hello.nginx --dir=../../../1024/hello-deploy/",
