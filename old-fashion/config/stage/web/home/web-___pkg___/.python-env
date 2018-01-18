@@ -1,5 +1,5 @@
 export PYENV_VERSION=___PYTHON-VERSION___
 export FLASK_APP="___pkg___.py"
 export FLASK_SETTINGS_MODULE="web.conf.online"
-export PYTHONPATH=/home/web-___pkg___/___REPO___:/home/conf-___pkg___/___REPO___-config
+export PYTHONPATH=/home/web-hive/wangwenpei/hive:/home/web-___pkg___/___REPO___:/home/conf-___pkg___/___REPO___-config
 export SENTRY_DSN=https://___RAVEN-USER___:___RAVEN-SECRET___@___RAVEN-HOST___/___RAVEN-ID___
