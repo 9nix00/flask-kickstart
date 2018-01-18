@@ -1,0 +1,14 @@
+{
+  "init": {
+    "title": "初始化环境",
+    "workflow": [
+      "cab config --hosts-file=./config/fabric/final.api.conf --env=hello.hacker --dir=../../../1024/hello-deploy/",
+      "cab config --hosts-file=./config/fabric/final.api.conf --env=hello.gfw --dir=../../../1024/hello-deploy/"
+    ]
+  },
+  "deploy": {
+    "title": "上线代码",
+    "workflow": [
+    ]
+  }
+}
