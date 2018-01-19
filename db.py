@@ -85,10 +85,10 @@ def migrate(actions):
     with open(project_requirements_file, 'w') as fp:
         fp.write(''.join(set(depends_packages)))
         os.chdir(abs_path)
-        print("git commit requirements.txt -m "
-              "'sync requirements from hive.'")
         pass
-
+    os.system("git commit requirements.txt -m "
+              "'sync requirements from hive.'")
+    os.system("git push")
     pass
 
 

@@ -23,7 +23,7 @@ from werkzeug.wsgi import DispatcherMiddleware
 from account.app import app as account_app
 from welcome.app import app as welcome_app
 
-application = DispatcherMiddleware(welcome_app, {
+app = DispatcherMiddleware(welcome_app, {
     '/account': account_app,
 })
 
@@ -31,5 +31,5 @@ application = DispatcherMiddleware(welcome_app, {
 if __name__ == '__main__':
     from werkzeug.serving import run_simple
 
-    run_simple('localhost', 5000, application,
+    run_simple('localhost', 5000, app,
                use_reloader=True, use_debugger=True, use_evalex=True)
