@@ -21,9 +21,9 @@
   "deploy": {
     "title": "上线代码",
     "workflow": [
-      "cab deploy --env=hive  --hosts-file=./config/fabric/web.conf --dir=../../../1024/hive/old-fashion/ --skip-requirements",
-      "cab deploy --env=web",
-      "cab deploy --env=private --hosts-file=./config/fabric/web.conf",
+      "cab deploy --env=hive  --hosts-file=./config/fabric/web.conf --dir=../../../1024/hive/old-fashion/ --skip-requirements --skip-migrate",
+      "cab deploy --env=web --skip-migrate",
+      "cab deploy --env=private --hosts-file=./config/fabric/web.conf --skip-requirements --skip-migrate",
       "cab config --env=web --restart wsgi-stormxx celery-stormxx"
     ]
   }
