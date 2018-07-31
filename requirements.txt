@@ -12,7 +12,6 @@ mongoengine
 pymysql
 sqlalchemy-utils
 flask
-flask-fantasy
 flask-sqlalchemy
 flask-caching
 flask-migrate
