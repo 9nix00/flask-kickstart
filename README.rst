@@ -24,10 +24,7 @@ Flask-Kickstart
 
 快速预览
 ^^^^^^^^^^^^
-.. note::
-
-    需要占用5000端口
-
+需要占用5000端口
 
 .. code-block::
 
@@ -38,4 +35,4 @@ Flask-Kickstart
 本地预览
 ^^^^^^^^^^^^
 
-请安装`requirements.dev.txt`,并按照`docker-compose.yml`及上层依赖中的环境变量配置。
+请安装 `requirements.dev.txt` ,并按照 `docker-compose.yml` 及上层依赖中的环境变量配置。
