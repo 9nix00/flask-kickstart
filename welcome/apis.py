@@ -11,7 +11,9 @@ api = Blueprint('welcome', __name__)
 
 @api.route('/')
 def hello():
-    return 'Hello World'
+    return jsonify({
+        'hello': 'world'
+    })
 
 
 @api.route('/hello-celery.api')
