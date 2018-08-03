@@ -14,7 +14,7 @@ import sys  # 此行仅为了演示方便
 
 sys.path.insert(0, __file__.rsplit('/', 2)[0])  # 此行仅为了演示方便
 
-from fantasy import create_app, create_celery, load_tasks
+from fantasy import create_app, create_celery, load_tasks   # noqa: E402
 
 os.environ.setdefault('HIVE_APP', 'welcome')  # 此行仅为了演示方便
 os.environ.setdefault('FANTASY_SETTINGS_MODULE', 'web.conf')  # 此行仅为了演示方便

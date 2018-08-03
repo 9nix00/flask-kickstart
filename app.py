@@ -15,8 +15,8 @@ import sys  # 此行仅为了演示方便
 
 sys.path.insert(0, __file__.rsplit('/', 2)[0])  # 此行仅为了演示方便
 
-from fantasy import create_app
-from werkzeug.wsgi import DispatcherMiddleware
+from fantasy import create_app                       # noqa: E402
+from werkzeug.wsgi import DispatcherMiddleware       # noqa: E402
 
 os.environ.setdefault('HIVE_APP', 'welcome')  # 此行仅为了演示方便
 os.environ.setdefault('FANTASY_SETTINGS_MODULE', 'web.conf')  # 此行仅为了演示方便

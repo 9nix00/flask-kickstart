@@ -24,8 +24,8 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, __file__.rsplit('/', 1)[0])
 
-from fantasy import create_app, create_celery, load_tasks
-from flask_sqlalchemy import SQLAlchemy
+from fantasy import create_app, create_celery, load_tasks   # noqa: E402
+from flask_sqlalchemy import SQLAlchemy                     # noqa: E402
 
 os.environ.setdefault('FANTASY_SETTINGS_MODULE', 'web.conf')
 os.environ.setdefault('HIVE_APP', 'welcome')
