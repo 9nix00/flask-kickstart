@@ -8,7 +8,6 @@ pytest-instafail
 pytest-mock
 pytest-logging
 pytest-mock
-pytest-timeout
 pytest-watch
 pytest-xdist
 pytest-flask
