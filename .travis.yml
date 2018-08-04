@@ -1,6 +1,8 @@
 language: python
 env:
   - PYTHONPATH=./
+  - FANTASY_ACTIVE_DB=no
+  - FANTASY_ACTIVE_CACHE=no
 python:
   # - "2.7"
   - "3.4"
