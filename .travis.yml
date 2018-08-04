@@ -1,4 +1,6 @@
 language: python
+env:
+  - PYTHONPATH=./ FANTASY_ACTIVE_DB=no FANTASY_ACTIVE_CACHE=no
 python:
   - "3.4"
   - "3.5"
@@ -9,10 +11,6 @@ python:
 install:
   - "pip install -r requirements.txt"
   - "pip install -r requirements.test.txt"
-before_script:
-  export PYTHONPATH=./
-  export FANTASY_ACTIVE_DB=no
-  export FANTASY_ACTIVE_CACHE=no
 script:
   - "flake8"
   - "pytest"
