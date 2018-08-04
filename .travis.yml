@@ -1,6 +1,6 @@
 language: python
 env:
-  - PYTHONPATH=./
+  - PYTHONPATH=`pwd`
   - FANTASY_ACTIVE_DB=no
   - FANTASY_ACTIVE_CACHE=no
 python:
