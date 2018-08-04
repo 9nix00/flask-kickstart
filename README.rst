@@ -1,6 +1,10 @@
 Flask-Kickstart
 =================
 
+|build-status| |coverage|
+
+
+
 推荐工作环境
 ------------------
 
@@ -36,3 +40,14 @@ Flask-Kickstart
 ^^^^^^^^^^^^
 
 请安装 `requirements.dev.txt` ,并按照 `docker-compose.yml` 及上层依赖中的环境变量配置。
+
+
+
+
+.. |build-status| image:: https://secure.travis-ci.org/wangwenpei/flask-kickstart.png?branch=master
+    :alt: Build status
+    :target: https://travis-ci.org/wangwenpei/flask-kickstart
+
+.. |coverage| image:: https://codecov.io/github/wangwenpei/flask-kickstart/coverage.svg?branch=master
+    :target: https://codecov.io/github/wangwenpei/flask-kickstart?branch=master
+
