@@ -1,4 +1,6 @@
 fudge
+codecov
+flake8
 pytest
 pytest-pep8
 pytest-cov
