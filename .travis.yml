@@ -1,25 +1,20 @@
 language: python
-env:
-  - PYTHONPATH=`pwd`
-  - FANTASY_ACTIVE_DB=no
-  - FANTASY_ACTIVE_CACHE=no
 python:
-  # - "2.7"
   - "3.4"
   - "3.5"
   - "3.5-dev"
   - "3.6"
   - "3.6-dev"
-#  - "3.7-dev"
   - "pypy3"
-# command to install dependencies
 install:
   - "pip install -r requirements.txt"
   - "pip install -r requirements.test.txt"
-# command to run tests
+before_script:
+  export PYTHONPATH=./
+  export FANTASY_ACTIVE_DB=no
+  export FANTASY_ACTIVE_CACHE=no
 script:
   - "flake8"
   - "pytest"
-
 after_success:
   - bash <(curl -s https://codecov.io/bash)
