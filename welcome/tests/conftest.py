@@ -4,8 +4,7 @@
 ====================
 """
 
-pytest_plugins = "fantasy.fixtures.pytest_hive",           # 固定声明，引入扩展
-
+pytest_plugins = "app_fixtures.myapp",           # 固定声明，引入扩展
 
 def pytest_namespace():
     return {

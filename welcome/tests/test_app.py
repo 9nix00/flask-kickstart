@@ -4,7 +4,12 @@
 =============
 """
 
+import os
 from flask import url_for
+
+os.environ['FANTASY_ACTIVE_DB'] = 'no'
+os.environ['FANTASY_ACTIVE_CACHE'] = 'no'
+os.environ['FANTASY_ACTIVE_CELERY'] = 'no'
 
 
 def test_hello(client):
